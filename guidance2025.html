@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受験ガイダンス 2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <style>
+      body {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 80px;
+        position: relative;
+        box-sizing: border-box;
+        font-family: 'Noto Sans JP', sans-serif;
+        line-height: 1.7;
+        color: #333;
+      }
+
+      h1 {
+        color: #1e3a8a;
+        text-align: center;
+        border-bottom: 3px solid #3b82f6;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        color: #1e3a8a;
+        border-left: 5px solid #3b82f6;
+        padding-left: 15px;
+        margin-top: 40px;
+      }
+
+      h3 {
+        color: #1e3a8a;
+        margin-top: 30px;
+      }
+
+      .alert-info {
+        background-color: #e0f2fe;
+        border: 1px solid #3b82f6;
+        border-left: 4px solid #3b82f6;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+
+      .alert-warning {
+        background-color: #fff3cd;
+        border: 1px solid #ffc107;
+        border-left: 4px solid #ffc107;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+
+      .toc {
+        background-color: #f8fafc;
+        padding: 20px;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        margin: 30px 0;
+      }
+
+      .toc ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .toc li {
+        margin: 8px 0;
+      }
+
+      .toc a {
+        text-decoration: none;
+        color: #3b82f6;
+        font-weight: 500;
+      }
+
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid #d1d5db;
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #f3f4f6;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .schedule-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .schedule-item {
+        background-color: #f8fafc;
+        padding: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+      }
+
+      .number-list {
+        counter-reset: rule-counter;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .number-list li {
+        counter-increment: rule-counter;
+        margin: 20px 0;
+        padding: 15px;
+        background-color: #f8fafc;
+        border-left: 4px solid #3b82f6;
+      }
+
+      .number-list li::before {
+        content: 'ルール' counter(rule-counter) ': ';
+        font-weight: bold;
+        color: #1e3a8a;
+      }
+
+      .recommendation-box {
+        background-color: #f0f9ff;
+        border: 2px solid #3b82f6;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 30px;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #3b82f6;
+      }
+
+      .timeline-item {
+        position: relative;
+        margin: 20px 0;
+        padding: 15px;
+        background-color: #f8fafc;
+        border-radius: 6px;
+      }
+
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 20px;
+        width: 10px;
+        height: 10px;
+        background-color: #3b82f6;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body style="">
+    <h1>受験ガイダンス 2025</h1>
+
+    <section id="introduction">
+      <h2>はじめに</h2>
+      <p>
+        この受験ガイダンスは、11月・12月の受験校決定に向けて、皆さんに必要な情報とルールをお伝えするために作成しました。受験校を決定していただくにあたって、様々なルールがありますので、そちらに関してのご説明と、受験情報として様々な受験を決めていただくにあたっての情報を皆さんにお伝えいたします。
+      </p>
+
+      <div class="alert-info">
+        <strong>重要：</strong>このガイダンスの3番から5番に関しては、すべての受験生に共通の話題となりますので、必ず確認してください。
+      </div>
+    </section>
+
+    <nav class="toc">
+      <h2>目次</h2>
+      <ul>
+        <li><a href="#exam-school-decision">1. 受験校確定に向けて</a></li>
+        <li><a href="#exam-basics">2. 大学入試の基礎知識</a></li>
+        <li><a href="#schedule-rules">3. 受験スケジュールを決める5つのルール</a></li>
+        <li><a href="#schedule-form">4. 受験日程表の記入</a></li>
+        <li><a href="#takeda-support">5. 武田塾でのサポート</a></li>
+      </ul>
+    </nav>
+
+    <section id="exam-school-decision">
+      <h2>受験校確定に向けて</h2>
+
+      <h3>予算感と入学金について</h3>
+      <div class="alert-warning">
+        <strong>注意：入学金の二重払いリスク</strong><br>
+        合格発表と入学手続き締切日のずれにより、入学金の二重払いが発生する可能性があります。毎回、合格発表日から期間が空くため、その期間に第一志望校の締切期限が過ぎてしまわないかどうかの確認が必要です。
+      </div>
+
+      <h3>日程・受験方式の確認</h3>
+      <ul>
+        <li><strong>前期日程・中期日程・後期日程</strong></li>
+        <li><strong>受験方式：</strong>個別全学部、共通テスト利用、外部利用試験など</li>
+      </ul>
+
+      <h3>リスクヘッジの考え方</h3>
+      <p>ご家庭に応じてスタンスが変わってきます：</p>
+      <ul>
+        <li><strong>今年で絶対決めたい（浪人したくない）場合：</strong>安全校中心の受験</li>
+        <li><strong>絶対この大学に行く（浪人覚悟）場合：</strong>チャレンジ校多めの受験</li>
+      </ul>
+
+      <h3>安全校の定義</h3>
+      <div class="recommendation-box">
+        <strong>安全校の3つの条件：</strong>
+        <ol>
+          <li>前期日程個別学部で受験可能</li>
+          <li>過去問演習等でほぼ満点、もしくは9割以上で取れている</li>
+          <li>模試（外部の模試や武田塾模試）で高いA判定が出ている</li>
+        </ol>
+      </div>
+
+      <h3>受験校数の目安</h3>
+      <p><strong>全体の平均として7〜10学部程度</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>分類</th>
+            <th>校数</th>
+            <th>説明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>チャレンジ校</td>
+            <td>1〜2校</td>
+            <td>現在の実力より上のレベル</td>
+          </tr>
+          <tr>
+            <td>実力相応校</td>
+            <td>3〜4校</td>
+            <td>現在の実力に見合ったレベル（多めに受験推奨）</td>
+          </tr>
+          <tr>
+            <td>安全校</td>
+            <td>2校程度</td>
+            <td>確実に合格できるレベル</td>
+          </tr>
+          <tr>
+            <td>共通テスト利用</td>
+            <td>1〜2校</td>
+            <td>共通テストの結果次第</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="exam-basics">
+      <h2>大学入試の基礎知識</h2>
+
+      <h3>受験カレンダー（11月〜入試まで）</h3>
+      <div class="schedule-grid">
+        <div class="schedule-item">
+          <strong>11月</strong><br>
+          受験校決定期間
+        </div>
+        <div class="schedule-item">
+          <strong>1月</strong><br>
+          共通テスト実施
+        </div>
+        <div class="schedule-item">
+          <strong>2月前半</strong><br>
+          国公立大学出願締切<br>
+          私立大学個別試験開始
+        </div>
+        <div class="schedule-item">
+          <strong>2月後半〜3月</strong><br>
+          国公立大学2次試験<br>
+          合格発表・入学手続き
+        </div>
+      </div>
+
+      <h3>入試方式の比較</h3>
+
+      <h4>全学部日程 vs 個別日程</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>全学部日程</th>
+            <th>個別日程</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>メリット</strong></td>
+            <td>
+              • 負担が少なく複数学部受験可能<br>
+              • 合格の可能性が広がる<br>
+              • マーク式で慣れていれば点数が取りやすい
+            </td>
+            <td>
+              • 1つの学部で失敗してもやり直しのチャンスがある<br>
+              • 合格難度が比較的低い（7〜8割で合格）<br>
+              • 複数回受験可能
+            </td>
+          </tr>
+          <tr>
+            <td><strong>デメリット</strong></td>
+            <td>
+              • 倍率が高い<br>
+              • 合格難度がかなり高い（9〜9.5割必要）<br>
+              • 募集人数が少ない
+            </td>
+            <td>
+              • 複数回受けないといけないため負担が大きい<br>
+              • 記述式問題が多い<br>
+              • 大学・学部ごとの対策が必要
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="recommendation-box">
+        <strong>おすすめ戦略：</strong>安全校の大学を全学部で受験し、個別日程も合わせて両方受験する。ただし、個別日程を多めにした方が合格の可能性は広がります。
+      </div>
+
+      <h3>共通テスト利用について</h3>
+      <div class="alert-info">
+        <strong>重要：共通テストリサーチは2社以上出願してください</strong><br>
+        1社だけでは偏りがある可能性があります。河合塾、駿台、ベネッセの主要3社から2社以上に出願することをお勧めします。
+      </div>
+
+      <h4>共通テスト利用のメリット・デメリット</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>メリット</th>
+            <th>デメリット</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              • 共通テストの成績だけで複数の学部・大学・学科を出願可能<br>
+              • 独自入試との併願も可能<br>
+              • 受験料が安価（約15,000円）<br>
+              • 地元で受験可能（長距離移動不要）
+            </td>
+            <td>
+              • 募集人数が少ないため倍率が高い<br>
+              • 共通テストの出願よりも先に出願となる場合がある<br>
+              • 5〜6教科課される場合もある<br>
+              • 合格発表は一般試験後がほとんど
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>調査書について</h3>
+      <div class="alert-warning">
+        <strong>調査書は早めに多めに取得してください</strong><br>
+        • 大学につき1枚必須<br>
+        • 3ヶ月以内が有効期限<br>
+        • 高校事務所が込み合うため早めの取得が重要<br>
+        • 10〜11枚程度余るくらいがちょうど良い
+      </div>
+
+      <h3>倍率と穴場学部について</h3>
+      <div class="alert-info">
+        <strong>倍率に惑わされないでください</strong><br>
+        • 昨年上がった倍率は基本的に下がりやすい<br>
+        • 逆に下がったところは次の年に上がることが多い<br>
+        • 大事なのは合格最低点を突破すること<br>
+        • 3年程度の平均を見て判断することが重要
+      </div>
+
+      <p><strong>穴場学部の特徴：</strong></p>
+      <ul>
+        <li>キャンパスが遠いところ</li>
+        <li>専門性が高い学部</li>
+        <li>文学部系統（フランス語学科、ドイツ語学科など）</li>
+      </ul>
+
+      <h3>おすすめ候補大学群</h3>
+
+      <h4>成成明学獨國武</h4>
+      <p><strong>成城・成蹊・明治学院・獨協・國學院・武蔵</strong></p>
+      <ul>
+        <li>日東駒専レベル以上、MARCH レベル未満</li>
+        <li>文系であれば古文が不要な学部学科が多く存在</li>
+        <li>キャンパスが都内の便利な場所にある大学がほとんど</li>
+        <li>決して簡単ではないが、それなりの対策で合格可能</li>
+      </ul>
+
+      <h4>四工大</h4>
+      <p><strong>芝浦工業大学・東京都市大学・東京電機大学・工学院大学</strong></p>
+      <ul>
+        <li>理工系の人気大学群</li>
+        <li>就職率が良好</li>
+      </ul>
+
+      <h4>女子大学</h4>
+      <div class="recommendation-box">
+        <strong>女子大学御三家：</strong>津田塾・東京女子・日本女子<br>
+        <strong>その他おすすめ：</strong>昭和女子・大妻女子・実践女子・共立女子など
+
+        <p><strong>女子大学のメリット：</strong></p>
+        <ul>
+          <li>就職率がMARCHと同様に良い</li>
+          <li>生徒数が少なく面倒見が良い</li>
+          <li>大学の規模が小さく手厚いサポート</li>
+        </ul>
+      </div>
+
+      <h3>早めの入試</h3>
+      <p>2月よりも前に入試がある大学で経験を積むことをお勧めします：</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>大学名</th>
+            <th>入試日</th>
+            <th>備考</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>神奈川大学</td>
+            <td>12月21日</td>
+            <td>給費生入試（一次試験免除もあり）</td>
+          </tr>
+          <tr>
+            <td>昭和女子大学</td>
+            <td>1月25日</td>
+            <td>早期入試</td>
+          </tr>
+          <tr>
+            <td>武蔵野大学</td>
+            <td>1月25日</td>
+            <td>早期入試</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="schedule-rules">
+      <h2>受験スケジュールを決める5つのルール</h2>
+
+      <ol class="number-list">
+        <li>
+          <strong>第一志望校を最も意識した全体の日程を組み立てる</strong><br>
+          第一志望校の前に詰めすぎて疲れて本番で実力を出しきれないことを避ける。早めの入試で慣れておき、第一志望までに合格を1つ取っておくと気持ちが楽になります。
+        </li>
+
+        <li>
+          <strong>3日以上の連続受験はなるべく控える</strong><br>
+          入試は精神的にも肉体的にも非常に疲れが出ます。初めての会場でいつもと違う緊張感で、思った以上に疲労が溜まります。全学部入試やセンター利用、複数日ある受験日程をうまく調整して連続しないようにしてください。
+        </li>
+
+        <li>
+          <strong>合格発表と入学手続き締切日を意識する</strong><br>
+          滑り止めで設定している大学が先に受験・合格発表を迎えて、本命の大学がその後で受験ということがほとんどです。本命の大学の合格発表よりも前に滑り止め校の入学手続きが来てしまうと、うまく調整しないと両方の入学金を支払わないといけなくなります。
+        </li>
+
+        <li>
+          <strong>最善の入試方式を考える</strong><br>
+          基本は前期の個別学部入試ですが、全学部の方が複数学部出願でき予算的に抑えられる可能性もあります。共通テスト利用は「受かったらラッキー」と考えるのが望ましいですが、出願することで共通テストの緊張感も保てるので1つか2つは必ず出願することをお勧めします。
+        </li>
+
+        <li>
+          <strong>受験直前まで今まで通り勉強する</strong><br>
+          受験が近づくと急に塾に来なくなったり学校に行かなくなる方も多いですが、受験直前こそ今まで通り勉強していただくことが非常に大事です。新しい参考書や問題集よりも、今までやった参考書や問題集を繰り返しやった方が定着し、合格率も上がります。
+        </li>
+      </ol>
+    </section>
+
+    <section id="schedule-form">
+      <h2>受験日程表の記入</h2>
+
+      <p>武田塾では11月1日以降に受験日程表を配布いたします。以下の項目を記入していただきます：</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>記入項目</th>
+            <th>詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>大学名</td>
+            <td>受験する大学の正式名称</td>
+          </tr>
+          <tr>
+            <td>学部</td>
+            <td>受験する学部・学科名</td>
+          </tr>
+          <tr>
+            <td>方式</td>
+            <td>全学部・個別・共通テスト利用など</td>
+          </tr>
+          <tr>
+            <td>出願期限</td>
+            <td>出願締切日</td>
+          </tr>
+          <tr>
+            <td>入試日程</td>
+            <td>実際の試験日</td>
+          </tr>
+          <tr>
+            <td>合格発表日</td>
+            <td>合格発表の日程</td>
+          </tr>
+          <tr>
+            <td>入学手続き締切</td>
+            <td>入学金・手続きの締切日</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>この表を元に過去問演習や共通テストの重要度を講師と共有し、戦略を立てていきます。</p>
+    </section>
+
+    <section id="takeda-support">
+      <h2>武田塾でのサポート</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>11月16日：全統プレ共通テスト実施</strong>
+          現在の実力を最終確認します。
+        </div>
+
+        <div class="timeline-item">
+          <strong>11月19日から：受験校決定面談</strong>
+          • 受験校の決定
+          • 今後のペース調整
+          • 受験大学・受験の注意事項説明
+          <div class="alert-warning" style="margin-top: 10px">
+            <strong>面談前に必ず受験日程表を完成させてから申し込んでください。</strong><br>
+            事前提出も可能です。相談して確定させたい場合は随時面談も可能ですが、あらかじめ候補を決めた上での細かい決定をさせていただきます。
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <strong>共通テスト受験後：志望校変更サポート</strong><br>
+          • 国公立大学の志望校変更<br>
+          • 私立大学の追加受験相談<br>
+          • 共通テストリサーチ結果に基づく戦略変更
+        </div>
+      </div>
+
+      <div class="alert-info">
+        <strong>申し込み方法：</strong><br>
+        • フォームからの送信をお願いします<br>
+        • 後日LINEにて一斉送信いたします<br>
+        • 緊急の場合はLINEでもご対応いたします
+      </div>
+
+      <p style="text-align: center; margin-top: 40px; font-size: 1.1em; color: #1e3a8a">
+        <strong>皆さんの受験成功を武田塾が全力でサポートいたします！</strong>
+      </p>
+    </section>
+  
+
+</body></html>
